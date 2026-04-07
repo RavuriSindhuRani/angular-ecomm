@@ -17,7 +17,7 @@ export class LoginComponent {
     if(this.pwd == this.reqpwd){
       alert("Login Success")
       localStorage.setItem("userloggedin",this.username)
-      this.bs.navigateByUrl("/user/products")
+      this.bs.navigateByUrl("/users/products")
     }
     else{
       alert("Password or Email Not Correct")

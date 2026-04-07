@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent {
   constructor(private bs:Router){}
-  username:any;
   logoutuser(){
+    this.username=localStorage.removeItem("userloggedin")
+  }
+  username:any;
+  ngOnInit(){
     if(localStorage.getItem("userloggedin")){
       this.username=localStorage.getItem("userloggedin")
     }

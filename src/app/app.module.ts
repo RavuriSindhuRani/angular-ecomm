@@ -10,6 +10,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { OrdersComponent } from './orders/orders.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsComponent,
     LoginComponent,
     WishlistComponent,
-    OrdersComponent
+    OrdersComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
