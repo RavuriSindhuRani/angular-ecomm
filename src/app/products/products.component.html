@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let p of products">
+            <div class="card">
+                <div class="card-header">
+                    <img [src]="p.image" class="card-img-top" height="200px" width="200px" alt="">
+                </div>
+                <div class="card-body">
+                    <h1 class="text-danger">{{p.title}}</h1>
+                    <p>{{p.description}}</p>
+                    <p>{{p.category}}</p>
+                    <label for="" class="badge bg-warning">price: {{p.price | currency:'INR'}}</label>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info">Buy Now</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
